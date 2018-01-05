@@ -25,6 +25,7 @@ public class Menu {
     private List<Cheese> cheeses = new ArrayList<>();
 
     public List<Cheese> getCheese() {
+
         return cheeses;
     }
 
@@ -33,10 +34,12 @@ public class Menu {
     }
 
     public Menu(String name) {
+
         this.name = name;
     }
 
     public int getId() {
+
         return id;
     }
 
@@ -46,10 +49,12 @@ public class Menu {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 }
