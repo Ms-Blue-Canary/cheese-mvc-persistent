@@ -48,9 +48,5 @@ public class Category {
         return cheeses;
     }
 
-    public void setCheeses(List<Cheese> cheeses) {
-        this.cheeses = cheeses;
-    }
-
 }
 
