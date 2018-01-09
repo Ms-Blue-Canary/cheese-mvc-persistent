@@ -83,14 +83,12 @@ public class MenuController {
         if (errors.hasErrors()) {
             model.addAttribute("form", form);
             return "menu/add-item";
-
         }
 
         Cheese theCheese = cheeseDao.findOne(form.getCheeseId());
         Menu theMenu = menuDao.findOne(form.getMenuId());
         theMenu.addItem(theCheese);
-        menuDao.save(theMenu);
-
+        Menu save = menuDao.save(theMenu);
         return "redirect:/menu/view/" + theMenu.getId();
     }
 }
